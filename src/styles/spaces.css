@@ -1,0 +1,46 @@
+/* Spaces */
+@each $i in (2, 4, 6, 8, 10, 12, 16, 20, 40) {
+
+  .u-m$(i) {
+    margin: $(i)px;
+  }
+
+  .u-mt$(i) {
+    margin-top: $(i)px;
+  }
+
+  .u-mb$(i) {
+    margin-bottom: $(i)px;
+  }
+
+  .u-ml$(i) {
+    margin-left: $(i)px;
+  }
+
+  .u-mr$(i) {
+    margin-right: $(i)px;
+  }
+
+  .u-p$(i) {
+    padding: $(i)px;
+  }
+
+  .u-pt$(i) {
+    padding-top: $(i)px;
+  }
+
+  .u-pb$(i) {
+    padding-bottom: $(i)px;
+  }
+
+  .u-pl$(i) {
+    padding-left: $(i)px;
+  }
+
+  .u-pr$(i) {
+    padding-right: $(i)px;
+  }
+
+  /* ------------------------ */
+}
+

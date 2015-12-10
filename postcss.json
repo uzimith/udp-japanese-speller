@@ -1,0 +1,11 @@
+{
+    "use": ["postcss-import", "precss", "autoprefixer", "cssnext", "stylelint", "postcss-reporter"],
+    "input": "src/app.css",
+    "output": "public/app.css",
+    "autoprefixer": {
+        "browsers": "> 5%"
+    },
+    "postcss-import": {
+        "glob": true
+    }
+}

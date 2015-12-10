@@ -1,0 +1,19 @@
+/*
+ * Setting
+ **/
+
+:root {
+  --fontSize: 1rem;
+}
+
+/*
+ * Common
+ * */
+
+@import "./styles/*.css";
+
+/*
+ * Component
+ * */
+
+@import "./components/*.css";

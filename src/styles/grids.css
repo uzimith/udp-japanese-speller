@@ -1,0 +1,21 @@
+/* grids */
+.grid-5-10 {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  grid-auto-flow: column;
+}
+
+
+@for $row from 0 to 4 {
+  @for $column from 0 to 9 {
+    .box-$(row)-$(column) {
+      grid-row-start: calc($row + 1);
+      grid-row-end: calc($row + 2);
+      grid-column-start: calc($column + 0);
+      grid-column-end: calc($column + 1);
+    }
+  }
+}

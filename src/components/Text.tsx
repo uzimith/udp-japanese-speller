@@ -1,9 +1,11 @@
 import * as React from 'react';
+import { BaseProps } from '../declare';
 import Input from './ui/form/Input'
+import cx from 'classnames';
 
 export interface State {};
 
-export interface Props {
+export interface Props extends BaseProps {
   input: string;
 };
 

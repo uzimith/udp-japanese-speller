@@ -44,3 +44,15 @@
   /* ------------------------ */
 }
 
+.u-tac {
+  text-align: center;
+}
+
+.u-ma {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.u-pa {
+  padding-left: auto !important;
+  padding-right: auto !important;
+}

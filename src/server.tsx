@@ -4,12 +4,15 @@ const Menu = require('menu');
 const BrowserWindow = require('browser-window');
 import * as dgram from 'dgram';
 
+// 試験運用版のウェブプラットフォームの機能
+app.commandLine.appendSwitch("--enable-experimental-web-platform-features");
+
 let mainWindow = null;
 const client = require('electron-connect').client;
 
 app.on('ready', function() {
 
-  mainWindow = new BrowserWindow({width: 1400, height: 1000});
+  mainWindow = new BrowserWindow({width: 1800, height: 1000});
   mainWindow.toggleDevTools()
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 

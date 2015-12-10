@@ -28,7 +28,7 @@ export default class Input extends React.Component<Props, State> {
     const { label, type, placeholder, textarea, rows, readOnly } = this.props;
     return (
         <div className={cx("form-group", this.props.className)}>
-          {label ? <label>Password</label> : null}
+          {label ? <label>{label}</label> : null}
           {textarea ? (
             <textarea className="form-control" rows={rows}>{this.props.children}</textarea>
           ) : (

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Input from './photon/form/Input'
+import Input from './ui/form/Input'
 
 export interface State {};
 
@@ -15,7 +15,7 @@ export default class CharacterBox extends React.Component<Props, State> {
 
   render() {
     return (
-        <Input className="u-m20" type="text" readOnly placeholder="入力">
+        <Input className="u-m20" label="Input" type="text" readOnly placeholder="入力">
           {this.props.input}
         </Input>
       );

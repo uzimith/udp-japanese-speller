@@ -2,7 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import CharacterTable from '../components/CharacterTable';
 import { createSelector } from 'reselect';
-import Pane from '../components/photon/Pane';
+import Pane from '../components/ui/Pane';
 
 const tableSelector = state => state.table;
 

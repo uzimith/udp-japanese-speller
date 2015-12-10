@@ -17,3 +17,10 @@
  * */
 
 @import "./components/*.css";
+
+
+/*
+ * Component UI
+ * */
+
+@import "./components/ui/*.css";

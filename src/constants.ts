@@ -4,7 +4,7 @@ export const ACTIONS = keyMirror({
     RECIEVE_COMMAND : null
 });
 
-export const characterTable = [
+export const CHARACTER_TABLE = [
 ["あ","い","う","え","お"],
 ["か","き","く","け","こ"],
 ["さ","し","す","せ","そ"],
@@ -16,3 +16,5 @@ export const characterTable = [
 ["ら","り","る","れ","ろ"],
 ["わ","を","ん","　","　"],
 ];
+
+export const BACK_COMMAND = 6;

@@ -19,7 +19,7 @@ export default class SendCommand extends React.Component<Props, State> {
 
   @autobind
   handleEnter() {
-    console.log(this.props.onCommandEnter(this.refs.input.refs.node.value));
+    this.props.onCommandEnter(+this.refs.input.refs.node.value);
     this.refs.input.refs.node.value = "";
   }
 

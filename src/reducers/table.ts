@@ -1,13 +1,13 @@
-import { ACTIONS, characterTable } from '../constants'
+import { ACTIONS, CHARACTER_TABLE } from '../constants'
 
 
 let initialState = [];
-for (let i in characterTable) {
-    for (let j in characterTable[i]) {
+for (let i in CHARACTER_TABLE) {
+    for (let j in CHARACTER_TABLE[i]) {
         const cid = `${i}_${j}`;
         initialState.push({
             cid: cid,
-            showing: characterTable[i][j],
+            showing: CHARACTER_TABLE[i][j],
             enabled: true,
             column: i,
             row: j

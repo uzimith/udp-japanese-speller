@@ -7,8 +7,7 @@ import { CHARACTER_TABLE } from '../constants';
 export interface State {};
 
 export interface Props extends BaseProps {
-  step: number;
-  command: number;
+  step: number[];
 };
 
 
@@ -19,18 +18,18 @@ export default class ShowStep extends React.Component<Props, State> {
   }
 
   render() {
-    const { step, command } = this.props;
+    const { step } = this.props;
     let step1;
 
-    if(command) {
+    if(step.length === 1) {
       step1 = (
-          <span> Column {CHARACTER_TABLE[command - 1][0]} ({command}) </span>
+          <span> Column {CHARACTER_TABLE[step[0] - 1][0]} ({step[0]}) </span>
       )
     }
 
     return (
         <div>
-          <p>Current : Step {step}</p>
+          <p>Current : Step {step.length + 1}</p>
           <p>Step 1 : {step1} </p>
         </div>
       );

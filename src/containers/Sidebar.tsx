@@ -13,9 +13,9 @@ export default class Sidebar extends React.Component<any, any> {
   render() {
     return (
           <Pane sidebar size="sm">
-            <SendCommand onCommandEnter={this.props.receiveCommand} />
+            <SendCommand onCommandEnter={this.props.receiveCommand} step={this.props.step} />
             <Text input={this.props.text} />
-            <ShowStep step={1} command={this.props.step[0]} />
+            <ShowStep step={this.props.step} />
             <p>{this.props.error}</p>
           </Pane>
         );

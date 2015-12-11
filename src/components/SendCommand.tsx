@@ -1,15 +1,15 @@
 import * as React from 'react';
-import { BaseProps } from '../declare';
+import { BaseProps, Character } from '../declare';
 import Input from './ui/form/Input'
-import autobind from 'autobind-decorator'
+import autobind from 'autobind-decorator';
 import cx from 'classnames';
 
 export interface State {};
 
 export interface Props extends BaseProps {
   onCommandEnter(): void;
+  step: Character[];
 };
-
 
 export default class SendCommand extends React.Component<Props, State> {
 
@@ -19,7 +19,7 @@ export default class SendCommand extends React.Component<Props, State> {
 
   @autobind
   handleEnter() {
-    this.props.onCommandEnter(+this.refs.input.refs.node.value);
+    this.props.onCommandEnter(+this.refs.input.refs.node.value, this.props.step);
     this.refs.input.refs.node.value = "";
   }
 

@@ -28,7 +28,6 @@ ReactDOM.render(
           <Provider store={store}>
               <App />
           </Provider>
-          {debug}
         </div>,
         document.getElementById('root')
         );
